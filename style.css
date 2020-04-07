@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Inria+Sans:wght@300;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: white;
+}
+
+header {
+    background-color: lightgray;
+    font-family: 'Baloo Bhai 2', sans-serif;
+}
