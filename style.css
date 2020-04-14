@@ -15,13 +15,16 @@ header {
     padding-top: 15px;
     position: relative;
     font-family: 'Raleway', sans-serif;
+    overflow: hidden;
 }
 
 #main-logo {
-    display:block;
+    display: block;
     text-align: center;
     margin: 15px auto 10px auto;
     height: 200px;
+    width: 100%;
+    z-index: 10;
     overflow: hidden;
 }
 
@@ -32,54 +35,108 @@ header {
     padding-top: 15px;
     position: fixed;
     text-align: right;
+    background-color: white;
 }
 
 .main-menu > li {
     position: relative;
     display: inline-block;
-    padding-right: 20px;
+    text-align: center;
+    padding: 14px 16px;
+    border-radius: 4px;
+}
+
+.main-menu li:hover {
+    color: white;
+    background-color: rgb(250, 98, 128)
 }
 
 /* Style all font awesome icons */
 .fa {
-    padding: 20px;
     font-size: 30px;
-    width: 30px;
-    height: 30px;
     text-align: center;
     text-decoration: none;
-    border-radius: 50%;
   }
 
 /* Facebook */
 .fa-facebook {
-    background: #3B5998;
-    color: white;
+    color: rgb(0, 0, 0);
   }
 
 /* Instagram */
   .fa-instagram {
-    background: #017bb5;
-    color: white;
+    color: rgb(0, 0, 0);
   }
 
 
-  #mydiv {
+  .draggable {
     position: absolute;
-    left: 60%;
-    padding: 5px;
-    z-index: 9;
-    background-color: transparent;
-    border: 1px black dashed;
-    text-align: left;
-    font-family: Raleway, sans-serif;
-  }
-  
-  #mydivheader {
-    padding: 5px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
     cursor: move;
-    z-index: 10;
-    background-color: rgb(139, 191, 231);
-    color: #fff;
+ }
+ 
+ .a {
+    width: 250px;
+    left: 1104px;
+    top: 264px;
   }
-  
+ 
+ .b {
+    width: 250px;
+    left: 250px;
+    top: 1003px;
+  }
+ 
+ .c {
+    width: 250px;
+    left: 1113px;
+    top: 1569px;
+  }
+
+ #a:hover {
+     border: 1px dashed;
+ }
+ #b:hover {
+    border: 1px dashed;
+}
+ #c:hover {
+    border: 1px dashed;
+}
+
+.d {
+    margin-left: 38px;
+    left: 231px;
+    top: 228px;
+}
+
+.e {
+    margin-left: 38px;
+    left: 593px;
+    top: 647px;
+}
+
+.f {
+    margin-left: 38px;
+    left: 703px;
+    top: 1081px;
+}
+
+.g {
+    margin-left: 38px;
+    left: 399px;
+    top: 1554px;
+}
+
+.h {
+    margin-left: 38px;
+    left: 644px;
+    top: 1992px;
+}
+ 
+ img:hover {
+    border: 1px dashed;
+  }
