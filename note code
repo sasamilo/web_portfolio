@@ -1,0 +1,76 @@
+
+
+
+
+CSS
+/* Draggable */
+  .draggable {
+    position: absolute;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    cursor: move;
+ }
+
+  .a {
+    padding: 20px;
+    width: 250px;
+    left: 1104px;
+    top: 264px;
+  }
+ 
+ .b {
+    padding: 20px;
+    width: 250px;
+    left: 250px;
+    top: 1003px;
+  }
+ 
+ .c {
+    padding: 20px;
+    width: 250px;
+    left: 1113px;
+    top: 1569px;
+  }
+
+.d {
+    margin-left: 38px;
+    left: 231px;
+    top: 228px;
+}
+
+.e {
+    margin-left: 38px;
+    left: 593px;
+    top: 647px;
+}
+
+.f {
+    margin-left: 38px;
+    left: 703px;
+    top: 1081px;
+}
+
+.g {
+    margin-left: 38px;
+    left: 399px;
+    top: 1554px;
+}
+
+.h {
+    margin-left: 38px;
+    left: 644px;
+    top: 1992px;
+}
+
+#a:hover {
+    border: 1px dashed;
+}
+#b:hover {
+   border: 1px dashed;
+}
+#c:hover {
+   border: 1px dashed;
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,58 +9,56 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-    <header id="main-header"> 
-        <div id="main-logo">
-            <img src="images/logo/skm_logo.png" height="200" alt="">
-        </div>
-        <div class="header-content">
-            <ul class="main-menu">
-                <li>about</li>
-                <li>contact</li>
+    <header>
+        <nav>
+            <div class="logo">
+                <h4>Saša Milo Kampič</h4>
+            </div>
+            <ul class="nav-links">
                 <li>
-                    <a href="https://www.facebook.com/sasa.kampic" class="fa fa-facebook" target="_blank">
-                    </a>
+                    <a data-page="home" href="#">Home</a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/sasasushi/" class="fa fa-instagram" target="_blank">
-                    </a>
+                    <a data-page="about" href="#">About</a>
                 </li>
+                <li>
+                    <a data-page="projects" href="#">Projects</a>
+                </li>
+                <li>
+                    <a data-page="contact" href="#">Contact</a>
+                </li>
+                <div class="bubble"></div>
             </ul>
-        </div>
+           <div class="burger">
+               <div class="line1"></div>
+               <div class="line2"></div>
+               <div class="line3"></div>
+           </div>
+        </nav>
     </header>
-    <h1></h1>
-
     <main>
-                    <!-- Draggable DIV -->
-        <div id="a" class="draggable a">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        </div>
-        <div id="b" class="draggable b">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        </div>
-        <div id="c" class="draggable c">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        </div>
-
-        <div class="draggable d">
-            <img src="images/alice/a1.svg" height="400" alt=""> 
-        </div>
-        <div class="draggable e">
-            <img src="images/alice/a2.svg" height="400" alt=""> 
-        </div>
-        <div class="draggable f">
-            <img src="images/alice/a3.svg" height="450" alt=""> 
-        </div>
-        <div class="draggable g">
-            <img src="images/alice/a4.svg" height="450" alt=""> 
-        </div>
-        <div class="draggable h">
-            <img src="images/alice/a5.svg" height="500" alt=""> 
-        </div>
-        
+        <section data-index="0" class="home">
+            <h1>Home</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, harum.</p>
+        </section>
+        <section data-index="2" class="about">
+            <h1>About</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, unde!</p>
+        </section>
+        <section data-index="3" class="projects">
+            <h1>Projects</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, reprehenderit.</p>
+        </section>
+        <section data-index="4" class="contact">
+            <h1>Contact</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, unde!</p>
+        </section>
     </main>
 
-    <script src="apps.js"></script> 
+
+    <script src="apps.js"></script>
 </body>
+
 </html>
