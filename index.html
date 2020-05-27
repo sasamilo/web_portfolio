@@ -7,19 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sasa Milo Kampic</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/svg-with-js.min.css" integrity="sha256-GyCVXSM0LI7EPORc9EWykRKWjlig49LoHPKt6s8NjBg="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+        crossorigin="anonymous" />
 </head>
 
 <body>
     <header>
         <nav>
-            <div class="logo">
-                <h4>Saša Milo Kampič</h4>
-            </div>
             <ul class="nav-links">
-                <li>
-                    <a data-page="home" href="#">Home</a>
-                </li>
                 <li>
                     <a data-page="about" href="#">About</a>
                 </li>
@@ -29,35 +26,83 @@
                 <li>
                     <a data-page="contact" href="#">Contact</a>
                 </li>
+                <li>
+                    <a href="https://github.com/sasamilo" class="fab fa-github-square"></a>
+                </li>
                 <div class="bubble"></div>
             </ul>
-           <div class="burger">
-               <div class="line1"></div>
-               <div class="line2"></div>
-               <div class="line3"></div>
-           </div>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </nav>
     </header>
     <main>
-        <section data-index="0" class="home">
-            <h1>Home</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, harum.</p>
+        <section class="page home">
+            <div class="image">
+                <img class="alice1" src="images/alice/a1.svg" alt="Alice">
+            </div>
+            <div class="details home">
+                <h1>Hi</h1>
+                <h2>Welcome to my site!</h2>
+            </div>
         </section>
-        <section data-index="2" class="about">
-            <h1>About</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, unde!</p>
+        <section class="page about">
+            <div class="image">
+                <img class="alice2" src="images/alice/a2.svg" alt="Alice">
+            </div>
+            <div class="details about">
+                <h1>About</h1>
+               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis at nobis nihil et omnis temporibus id quas facere qui voluptates.</p>
         </section>
-        <section data-index="3" class="projects">
-            <h1>Projects</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, reprehenderit.</p>
+        <section class="page projects">
+            <div class="image">
+                <img class="alice3" src="images/alice/a3.svg" alt="Alice">
+            </div>
+            <div class="details projects">
+                <h1>Projects</h1>
+                <div class="work-gallery">
+                    <img src="./images/gallery/couch.png" alt="Couch Potato">
+                    <img src="./images/gallery/crunch.png" alt="Crunch">
+                    <img src="./images/gallery/slobound1.png" alt="Slo Bound">
+                </div>
+            </div>
         </section>
-        <section data-index="4" class="contact">
-            <h1>Contact</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, unde!</p>
+        <section class="page contact">
+            <div class="image">
+                <img class="alice4" src="images/alice/a4.svg" alt="Alice">
+            </div>
+            <div class="details contact">
+                <h1>Contact</h1>
+                <h2>Saša Milo Kampič</h2>
+                <p>info@smk.com</p>
+                <p>123-555-1234</p>
+            </div>
         </section>
     </main>
-
-
+    <footer class="footer">
+        <div class="image">
+            <img class="alice5" src="./images/alice/a5.svg" alt="Alice">
+        </div>
+        <h1>Wooo!</h1>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js" integrity="sha256-v/YsEqWkVsiNHryCWg+vjC/eDBakMAgOsCJRa0kNPOg="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js" integrity="sha256-ABrLsV2caVEMCBfm3eNhv/CYQG+tGCqzw2f4b/Pag0M="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js" integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js" integrity="sha256-XBVALc3QsDSQiDtiaBwNZ2rxCJTHzlUhhlDQ84J8bw8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js" integrity="sha256-+9YNuItWuR4sbqeaNiJOxG0BvptYz4fbUXbIZoH5Jwo="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js" integrity="sha256-dOAYt+bDtcwODMeQ8lYDO5ezeDxYU1KbxhAban7SMVk="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js" integrity="sha256-y/IiirQ5+JuD/reepUkhNSGoEhL96f9n+cc9AC1YYZg="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/BezierPlugin.min.js" integrity="sha256-/erKdYc8JsJ+bIbaYTeKV2tTgIgzRcaxM+pRjKlEavU="
+        crossorigin="anonymous"></script>
     <script src="apps.js"></script>
 </body>
 

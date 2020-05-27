@@ -1,39 +1,49 @@
-* {
+*, *::before, *::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: sans-serif;
+@font-face{
+    font-family: KrubLight;
+    src: url('./fonts/Krub-Light.ttf');
+}
+
+@font-face{
+    font-family: KrubRegular;
+    src: url('./fonts/Krub-Regular.ttf');
+}
+
+@font-face {
+    font-family: HomApp;
+    src: url('./fonts/HomemadeApple-Regular.ttf')
 }
 
 header {
+    padding-bottom: 10px;
     position: sticky;
-    top: 0px;
+}
+
+body {
+    font-family: KrubLight, sans-serif; 
     background: white;
+    color: grey;
 }
 
 nav {
+    background: white;
     min-height: 10vh;
-    width: 90%;
     margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 3;
+}
+
+nav ul {
+    width: 30%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-
-.logo {
-    color: grey;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: 15px;
-}
-
-.nav-links {
-    display: flex;
-    justify-content: space-around;
-    flex: 0.7;
 }
 
 .nav-links li {
@@ -46,28 +56,32 @@ nav {
     font-weight: lighter;
     text-transform: uppercase;
     color: grey;
-}
-/* nav h1, 
-nav ul {
-    font-size: 1rem;
-    flex: 1;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    width: 10px;
-} */
-
-/* nav a {
-    color: grey;
-    text-decoration: none;
-    letter-spacing: 2px;
-    font-weight: lighter;
-    text-transform: uppercase;
     font-size: 15px;
-} */
+} 
+
+nav .fab {
+    font-size: 20px;
+}
+
+@keyframes fadeSimple {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
 
 .burger {
     display: none;
@@ -143,42 +157,71 @@ nav ul {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
-
-section {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.page {
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: 5% 1.5fr 2fr 5%;
     align-items: center;
-    text-align: center;
 }
 
-section h1 {
-    font-size: 5rem;
-    color: white;
-    margin-bottom: 20px;
+.image {
+    align-self: center;
+    justify-self: center;
+    grid-column: 2/3;
 }
 
-
-.home {
-    background: linear-gradient(to right top, #628dd2, #d3eee0)
+.image img {
+    height: 300px;
+    transform: scale(1);
+}
+ 
+.image img:hover {
+    animation: alice 0.5s ease-in-out 2 alternate;
 }
 
-.about {
-    background: linear-gradient(to right top, #ffe101, #b8cc38)
+@keyframes alice {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(3);
+    }
 }
 
-.projects {
-    background: linear-gradient(to right top, #d3eee0, #f7735c)
+.details {
+    grid-column: 3/4;
 }
 
-.contact {
-    background: linear-gradient(to right top, #4fc1ea, #d7519c)
+.details h1 {
+    font-family: HomApp;
+    font-size: 54px;
 }
 
-.bubble {
-    position: absolute;
-    z-index: -2;
-    transform: scale(1.5);
-    transition: all 0.5s;
+.details p {
+    font-size: 2vh;
+}
+
+.work-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    align-items: center;
+    justify-content: center;
+}
+
+.work-gallery img {
+    width: 100%;
+    padding: 5px;
+}
+
+.work-gallery img:hover{
+    animation: alice 1s ease-in-out infinite alternate;
+}
+
+footer {
+    height: 30vh;
+    background: lightgray;
+    color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
