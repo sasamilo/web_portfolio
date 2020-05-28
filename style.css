@@ -22,32 +22,42 @@
 header {
     padding-bottom: 10px;
     position: sticky;
+    top: 0;
+}
+
+.logo img {
+    max-width: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
 }
 
 body {
     font-family: KrubLight, sans-serif; 
-    background: white;
+    background: #ececec;
     color: grey;
+    transition: all 0.5s ease;
 }
 
 nav {
     background: white;
-    min-height: 10vh;
+    min-height: 13vh;
     margin: auto;
+    width: 100%;
     display: flex;
     justify-content: flex-end;
-    z-index: 3;
+    z-index: 4;
 }
 
 nav ul {
-    width: 30%;
     display: flex;
-    justify-content: space-around;
     align-items: center;
 }
 
 .nav-links li {
     list-style: none;
+    padding-right: 20px;
 }
 
 .nav-links a {
@@ -60,7 +70,14 @@ nav ul {
 } 
 
 nav .fab {
-    font-size: 20px;
+    font-size: 25px;
+}
+
+.bubble {
+    position: absolute;
+    opacity: 70%;
+    transform: scale(1.3);
+    transition: all 0.5s;
 }
 
 @keyframes fadeSimple {
@@ -94,12 +111,6 @@ nav .fab {
     background-color: grey;
     margin: 5px;
     transition: all 0.3s ease;
-}
-
-@media screen and (max-width:1024px) {
-    .nav-links {
-        flex: 50%;
-    }
 }
 
 @media screen and (max-width:768px) {
@@ -157,7 +168,13 @@ nav .fab {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
-.page {
+.fas {
+    font-size: 25px;
+    color: #808080;
+    text-decoration: none;
+}
+
+#home, #about, #projects, #contact {
     min-height: 90vh;
     display: grid;
     grid-template-columns: 5% 1.5fr 2fr 5%;
@@ -217,6 +234,10 @@ nav .fab {
     animation: alice 1s ease-in-out infinite alternate;
 }
 
+.bg-active {
+    background-color: white;
+}
+
 footer {
     height: 30vh;
     background: lightgray;
@@ -224,4 +245,9 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+footer h1 {
+    font-family: HomApp;
+    font-size: 3vh;
 }

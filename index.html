@@ -16,18 +16,26 @@
 <body>
     <header>
         <nav>
+            <div class="logo">
+                <a href="/">
+                    <img src="./images/newlogo.png" alt="logo">
+                </a>
+            </div>
             <ul class="nav-links">
                 <li>
-                    <a data-page="about" href="#">About</a>
+                    <a data-page="home" href="#home">Home</a>
                 </li>
                 <li>
-                    <a data-page="projects" href="#">Projects</a>
+                    <a data-page="about" href="#about">About</a>
                 </li>
                 <li>
-                    <a data-page="contact" href="#">Contact</a>
+                    <a data-page="projects" href="#projects">Projects</a>
                 </li>
                 <li>
-                    <a href="https://github.com/sasamilo" class="fab fa-github-square"></a>
+                    <a data-page="contact" href="#contact">Contact</a>
+                </li>
+                <li>
+                    <a href="https://github.com/sasamilo" class="fab fa-github"></a>
                 </li>
                 <div class="bubble"></div>
             </ul>
@@ -39,7 +47,7 @@
         </nav>
     </header>
     <main>
-        <section class="page home">
+        <section id="home" data-index="0" class="home">
             <div class="image">
                 <img class="alice1" src="images/alice/a1.svg" alt="Alice">
             </div>
@@ -48,15 +56,18 @@
                 <h2>Welcome to my site!</h2>
             </div>
         </section>
-        <section class="page about">
+        <section id="about" data-index="1" class="about">
             <div class="image">
                 <img class="alice2" src="images/alice/a2.svg" alt="Alice">
             </div>
             <div class="details about">
                 <h1>About</h1>
-               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis at nobis nihil et omnis temporibus id quas facere qui voluptates.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis at nobis nihil et omnis temporibus id quas
+                    facere qui voluptates.</p>
+            </div>
+            <a href="#home" class="fas fa-chevron-circle-up"></a>
         </section>
-        <section class="page projects">
+        <section id="projects" data-index="2" class="projects">
             <div class="image">
                 <img class="alice3" src="images/alice/a3.svg" alt="Alice">
             </div>
@@ -68,8 +79,9 @@
                     <img src="./images/gallery/slobound1.png" alt="Slo Bound">
                 </div>
             </div>
+            <a href="#home" class="fas fa-chevron-circle-up"></a>
         </section>
-        <section class="page contact">
+        <section id="contact" data-index="3" class="contact">
             <div class="image">
                 <img class="alice4" src="images/alice/a4.svg" alt="Alice">
             </div>
@@ -79,13 +91,14 @@
                 <p>info@smk.com</p>
                 <p>123-555-1234</p>
             </div>
+            <a href="#home" class="fas fa-chevron-circle-up"></a>
         </section>
     </main>
     <footer class="footer">
         <div class="image">
             <img class="alice5" src="./images/alice/a5.svg" alt="Alice">
         </div>
-        <h1>Wooo!</h1>
+        <h1>None of this is worth it if you can't be yourself...</h1>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js" integrity="sha256-v/YsEqWkVsiNHryCWg+vjC/eDBakMAgOsCJRa0kNPOg="
         crossorigin="anonymous"></script>
