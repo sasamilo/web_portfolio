@@ -75,7 +75,7 @@ nav .fab {
 
 .bubble {
     position: absolute;
-    opacity: 70%;
+    opacity: 40%;
     transform: scale(1.3);
     transition: all 0.5s;
 }
@@ -174,17 +174,47 @@ nav .fab {
     text-decoration: none;
 }
 
-#home, #about, #projects, #contact {
+#home, #about, #services, #projects, #contact {
     min-height: 90vh;
     display: grid;
-    grid-template-columns: 5% 1.5fr 2fr 5%;
+    grid-template-columns: 20% 4fr 20%;
     align-items: center;
 }
 
-.image {
-    align-self: center;
-    justify-self: center;
+.details {
     grid-column: 2/3;
+}
+
+.offer {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    line-height: 30px;
+}
+
+.offer > .tech, .idea, .hope {
+    padding: 20px;
+}
+
+.tech > ul {
+    list-style-type: circle;
+}
+
+.idea > ul {
+    list-style-type: circle;
+}
+
+.hope > ul {
+    list-style-type: circle;
+}
+
+li {
+    font-size: 2vh;
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    padding: 20px 0px 20px 80px;
 }
 
 .image img {
@@ -205,10 +235,6 @@ nav .fab {
     }
 }
 
-.details {
-    grid-column: 3/4;
-}
-
 .details h1 {
     font-family: HomApp;
     font-size: 54px;
@@ -219,6 +245,7 @@ nav .fab {
 }
 
 .work-gallery {
+    padding: 30px 0px 20px 0;
     display: grid;
     grid-template-columns: repeat(3, 200px);
     align-items: center;
@@ -227,7 +254,7 @@ nav .fab {
 
 .work-gallery img {
     width: 100%;
-    padding: 5px;
+    padding: 10px; 
 }
 
 .work-gallery img:hover{
@@ -236,6 +263,32 @@ nav .fab {
 
 .bg-active {
     background-color: white;
+}
+
+.info-all {
+    display: grid;
+    grid-template-columns: 400px 400px;
+}
+
+.contact a {
+    text-decoration: none;
+    color: gray;
+}
+
+.contact-info > p {
+    align-items: center;
+}
+
+form > h3 {
+    padding-bottom: 20px;
+}
+
+form > div {
+    padding: 0px 0px 20px 0px;
+}
+
+.button {
+   text-align: center;
 }
 
 footer {
@@ -247,7 +300,9 @@ footer {
     justify-content: center;
 }
 
-footer h1 {
-    font-family: HomApp;
-    font-size: 3vh;
+
+
+footer > span {
+    font-size: 12px;
 }
+
